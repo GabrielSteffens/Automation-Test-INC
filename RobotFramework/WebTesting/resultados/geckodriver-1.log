@@ -1,0 +1,19 @@
+1742779445794	geckodriver	INFO	Listening on 127.0.0.1:56558
+1742779448933	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56559" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\gabri\\AppData\\Local\\Temp\\rust_mozprofilevTatVO"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1742779449406	Marionette	INFO	Marionette enabled
+1742779449648	Marionette	INFO	Listening on port 56570
+WebDriver BiDi listening on ws://127.0.0.1:56559
+Read port: 56570
+1742779449907	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56559/devtools/browser/68805558-d087-478c-b67a-0ff20ad7d336
+JavaScript warning: https://www.amazon.com.br/, line 3421: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/DWfktBMuXDo-4py4C4f5DVkUn3pM3IEbDs5BkaB-n2Q.js line 2 > eval line 1543 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com.br/s?k=Xbox+Series+S&__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1FFC1MWXMNGHL&sprefix=%2Caps%2C233&ref=nb_sb_noss, line 6968: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1742779462466	Marionette	INFO	Stopped listening on port 56570
+JavaScript warning: https://images-na.ssl-images-amazon.com/images/I/51na2k2njbL._RC|71wUySG8iFL.js,019AaNzy9HL.js,01MHmiwP7tL.js,71NWIs1JqBL.js,01cZ21lATAL.js,01bAfFgS7JL.js,01A2AtmCtlL.js,41jBieyCvYL.js,01wXnKULArL.js,01+pnQJuQ0L.js,21PMP-WgxTL.js,41lXbNNGwGL.js,51HrkAbbpLL.js,31XO9BO1OrL.js,11lw6J7z8iL.js,31+UifI0MIL.js,01VYGE8lGhL.js,01tDwkxEoCL.js_.js?AUIClients/NavDesktopUberAsset#desktop.language-pt.br.878681-T1.1079958-T1.1089549-T1.948355-T2.1168233-T1.1104203-T1, line 134: Script terminated by timeout at:
+onEnter/y<@https://images-na.ssl-images-amazon.com/images/I/51na2k2njbL._RC|71wUySG8iFL.js,019AaNzy9HL.js,01MHmiwP7tL.js,71NWIs1JqBL.js,01cZ21lATAL.js,01bAfFgS7JL.js,01A2AtmCtlL.js,41jBieyCvYL.js,01wXnKULArL.js,01+pnQJuQ0L.js,21PMP-WgxTL.js,41lXbNNGwGL.js,51HrkAbbpLL.js,31XO9BO1OrL.js,11lw6J7z8iL.js,31+UifI0MIL.js,01VYGE8lGhL.js,01tDwkxEoCL.js_.js?AUIClients/NavDesktopUberAsset#desktop.language-pt.br.878681-T1.1079958-T1.1089549-T1.948355-T2.1168233-T1.1104203-T1:134:173
+
+Dynamically enable window occlusion 1

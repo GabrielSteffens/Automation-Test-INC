@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-07-27T20:25:33.059956" rpa="false" schemaversion="5">
+<suite id="s1" name="Inc Main" source="C:\Automation\RobotFramework\WebTesting\inc_main.robot">
+<test id="s1-t1" name="Caso de teste - Criar SSIDs" line="9">
+<kw name="Abrir o navegador" owner="inc" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-07-27T20:25:33.629097" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-07-27T20:25:33.628907" elapsed="1.313043"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-27T20:25:34.942177" elapsed="0.040104"/>
+</kw>
+<status status="PASS" start="2025-07-27T20:25:33.628387" elapsed="1.354028"/>
+</kw>
+<kw name="Acessar a home page do site inccloud.intelbras.com.br" owner="inc">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-07-27T20:25:34.983536" level="INFO">Opening url 'https://inccloud.intelbras.com.br'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-07-27T20:25:34.983340" elapsed="4.563632"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=//p[@class='login-title importantFont']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-27T20:25:39.547135" elapsed="0.641526"/>
+</kw>
+<status status="PASS" start="2025-07-27T20:25:34.982955" elapsed="5.205821"/>
+</kw>
+<kw name="Preencher Login" owner="inc">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-27T20:25:40.189444" level="INFO">Typing text 'odolir' into text field '//input[@id='name']'.</msg>
+<arg>locator=//input[@id='name']</arg>
+<arg>text=${USER_INC}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-27T20:25:40.189271" elapsed="0.086114"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-27T20:25:41.276003" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-27T20:25:40.275586" elapsed="1.000526"/>
+</kw>
+<status status="PASS" start="2025-07-27T20:25:40.189060" elapsed="1.087148"/>
+</kw>
+<kw name="Preencher Senha" owner="inc">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-27T20:25:41.276949" level="INFO">Typing text 'Provisorio.002' into text field '//input[@id='password']'.</msg>
+<arg>locator=//input[@id='password']</arg>
+<arg>text=${PASS_INC}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-27T20:25:41.276758" elapsed="0.072025"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-27T20:25:42.349578" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-27T20:25:41.348993" elapsed="1.000738"/>
+</kw>
+<status status="PASS" start="2025-07-27T20:25:41.276500" elapsed="1.073361"/>
+</kw>
+<kw name="Marcar o checkbox do User Agreement" owner="inc">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-07-27T20:25:42.350609" level="INFO">Selecting checkbox '//div[@class='mt10']//label[1]//span[1]//input[1]'.</msg>
+<arg>locator=//div[@class='mt10']//label[1]//span[1]//input[1]</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-27T20:25:42.350464" elapsed="0.057011"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-27T20:25:43.408369" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-27T20:25:42.407651" elapsed="1.000823"/>
+</kw>
+<status status="PASS" start="2025-07-27T20:25:42.350193" elapsed="1.058375"/>
+</kw>
+<kw name="Clicar em login" owner="inc">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-27T20:25:43.409216" level="INFO">Clicking element 'loginBtn'.</msg>
+<arg>locator=loginBtn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-27T20:25:43.409088" elapsed="0.043496"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-27T20:25:48.452983" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-27T20:25:43.452745" elapsed="5.000347"/>
+</kw>
+<status status="PASS" start="2025-07-27T20:25:43.408857" elapsed="5.044331"/>
+</kw>
+<kw name="Alterar idioma" owner="inc">
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-07-27T20:25:48.453881" level="INFO">Simulating Mouse Over on element '(//*[name()='svg'][@class='_icon_oasis'])[161]'.</msg>
+<arg>locator=(//*[name()='svg'][@class='_icon_oasis'])[161]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-07-27T20:25:48.453744" elapsed="0.328895"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-27T20:25:49.783395" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-27T20:25:48.782792" elapsed="1.000715"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-07-27T20:25:49.783858" level="INFO">Simulating Mouse Over on element '(//div[@class='ivu-select-dropdown'])[3]'.</msg>
+<arg>locator=(//div[@class='ivu-select-dropdown'])[3]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-07-27T20:25:49.783674" elapsed="0.280206"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-27T20:25:51.064447" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-27T20:25:50.064039" elapsed="1.000530"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-27T20:25:51.064975" level="INFO">Clicking element '//li[normalize-space()='English']'.</msg>
+<arg>locator=//li[normalize-space()='English']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-27T20:25:51.064764" elapsed="1.689303"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-27T20:25:57.754939" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-27T20:25:52.754239" elapsed="5.000806"/>
+</kw>
+<status status="PASS" start="2025-07-27T20:25:48.453491" elapsed="9.301645"/>
+</kw>
+<kw name="Clicar em Organization" owner="inc">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-27T20:25:57.755854" level="INFO">Clicking element '//li[@title='Organization']'.</msg>
+<arg>locator=//li[@title='Organization']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-27T20:25:57.755705" elapsed="0.052551"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-27T20:26:00.809040" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-27T20:25:57.808492" elapsed="3.000685"/>
+</kw>
+<status status="PASS" start="2025-07-27T20:25:57.755448" elapsed="3.053855"/>
+</kw>
+<kw name="Preencher nome do site" owner="inc">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-27T20:26:00.810197" level="INFO">Clicking element '//div[contains(@class,'el-table singleTable fixed-columns-roll-style el-table--fit el-table--border el-table--fluid-height el-table--scrollable-x el-table--enable-row-transition')]//div[contains(@class,'el-table__fixed-right')]//div[contains(@class,'el-table__fixed-header-wrapper')]//table[contains(@class,'el-table__header')]//thead//tr//th[contains(@class,'is-leaf')]//div[contains(@class,'cell umy-table-beyond')]//div//i[contains(@class,'ivu-icon ivu-icon-ios-search')]'.</msg>
+<arg>locator=//div[contains(@class,'el-table singleTable fixed-columns-roll-style el-table--fit el-table--border el-table--fluid-height el-table--scrollable-x el-table--enable-row-transition')]//div[contains(@class,'el-table__fixed-right')]//div[contains(@class,'el-table__fixed-header-wrapper')]//table[contains(@class,'el-table__header')]//thead//tr//th[contains(@class,'is-leaf')]//div[contains(@class,'cell umy-table-beyond')]//div//i[contains(@class,'ivu-icon ivu-icon-ios-search')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-27T20:26:00.810033" elapsed="0.101560"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-27T20:26:03.912368" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-27T20:26:00.911748" elapsed="3.000761"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-07-27T20:26:03.912996" level="INFO">Typing text 'Teste' into text field '//div[4]//div[1]//table[1]//thead[1]//tr[1]//th[2]//div[1]//div[1]//input[1]'.</msg>
+<arg>locator=//div[4]//div[1]//table[1]//thead[1]//tr[1]//th[2]//div[1]//div[1]//input[1]</arg>
+<arg>text=${SITE}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-27T20:26:03.912725" elapsed="0.060279"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-27T20:26:06.973617" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-27T20:26:03.973160" elapsed="3.000562"/>
+</kw>
+<status status="PASS" start="2025-07-27T20:26:00.809692" elapsed="6.164122"/>
+</kw>
+<kw name="Selecionar o site" owner="inc">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-27T20:26:06.974580" level="INFO">Clicking element '//html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[2]/div[2]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[4]/div[2]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/div[1]/a[1]'.</msg>
+<arg>locator=//html[1]/body[1]/div[1]/div[1]/div[2]/div[2]/div[3]/div[2]/div[2]/div[2]/div[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[4]/div[2]/div[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/div[1]/div[1]/div[1]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-27T20:26:06.974438" elapsed="0.050261"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-27T20:26:10.025338" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-27T20:26:07.024860" elapsed="3.000583"/>
+</kw>
+<status status="PASS" start="2025-07-27T20:26:06.974199" elapsed="3.051336"/>
+</kw>
+<kw name="Clicar em Settings" owner="inc">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-27T20:26:10.026199" level="INFO">Clicking element '(//i[@class='ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon'])[4]'.</msg>
+<arg>locator=(//i[@class='ivu-icon ivu-icon-ios-arrow-down ivu-menu-submenu-title-icon'])[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-27T20:26:10.026055" elapsed="0.053938"/>
+</kw>
+<status status="PASS" start="2025-07-27T20:26:10.025816" elapsed="0.054293"/>
+</kw>
+<kw name="Clicar em CloudAPs" owner="inc">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-27T20:26:12.081153" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-27T20:26:10.080663" elapsed="2.000609"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-07-27T20:26:12.081610" level="INFO">Simulating Mouse Over on element '//li[@data-id='NM.Settings.CloudAPs']//div[@class='menu-dropdown ivu-dropdown']'.</msg>
+<arg>locator=//li[@data-id='NM.Settings.CloudAPs']//div[@class='menu-dropdown ivu-dropdown']</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-07-27T20:26:12.081439" elapsed="0.271421"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-27T20:26:14.353598" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-27T20:26:12.353046" elapsed="2.000657"/>
+</kw>
+<status status="PASS" start="2025-07-27T20:26:10.080405" elapsed="4.273387"/>
+</kw>
+<kw name="Clicar em WLAN Settings" owner="inc">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-27T20:26:14.354445" level="INFO">Clicking element '//li[normalize-space()='WLAN Settings']'.</msg>
+<msg time="2025-07-27T20:26:14.480251" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-07-27T20:26:14.480459" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=138.0.7204.169)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7b7c2e925+77845]
+	GetHandleVerifier [0x0x7ff7b7c2e980+77936]
+	(No symbol) [0x0x7ff7b79e9b0c]
+	(No symbol) [0x0x7ff7b7a41ba4]
+	(No symbol) [0x0x7ff7b7a336c8]
+	(No symbol) [0x0x7ff7b7a688ca]
+	(No symbol) [0x0x7ff7b7a32f76]
+	(No symbol) [0x0x7ff7b7a68ae0]
+	(No symbol) [0x0x7ff7b7a90b07]
+	(No symbol) [0x0x7ff7b7a686a3]
+	(No symbol) [0x0x7ff7b7a31791]
+	(No symbol) [0x0x7ff7b7a32523]
+	GetHandleVerifier [0x0x7ff7b7f0683d+3059501]
+	GetHandleVerifier [0x0x7ff7b7f00bfd+3035885]
+	GetHandleVerifier [0x0x7ff7b7f203f0+3164896]
+	GetHandleVerifier [0x0x7ff7b7c48c2e+185118]
+	GetHandleVerifier [0x0x7ff7b7c5053f+216111]
+	GetHandleVerifier [0x0x7ff7b7c372d4+113092]
+	GetHandleVerifier [0x0x7ff7b7c37489+113529]
+	GetHandleVerifier [0x0x7ff7b7c1e288+10616]
+	BaseThreadInitThunk [0x0x7ffb80f3e8d7+23]
+	RtlUserThreadStart [0x0x7ffb8283c34c+44]
+</msg>
+<arg>locator=//li[normalize-space()='WLAN Settings']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-07-27T20:26:14.354315" elapsed="0.141154">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=138.0.7204.169)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7b7c2e925+77845]
+	GetHandleVerifier [0x0x7ff7b7c2e980+77936]
+	(No symbol) [0x0x7ff7b79e9b0c]
+	(No symbol) [0x0x7ff7b7a41ba4]
+	(No symbol) [0x0x7ff7b7a336c8]
+	(No symbol) [0x0x7ff7b7a688ca]
+	(No symbol) [0x0x7ff7b7a32f76]
+	(No symbol) [0x0x7ff7b7a68ae0]
+	(No symbol) [0x0x7ff7b7a90b07]
+	(No symbol) [0x0x7ff7b7a686a3]
+	(No symbol) [0x0x7ff7b7a31791]
+	(No symbol) [0x0x7ff7b7a32523]
+	GetHandleVerifier [0x0x7ff7b7f0683d+3059501]
+	GetHandleVerifier [0x0x7ff7b7f00bfd+3035885]
+	GetHandleVerifier [0x0x7ff7b7f203f0+3164896]
+	GetHandleVerifier [0x0x7ff7b7c48c2e+185118]
+	GetHandleVerifier [0x0x7ff7b7c5053f+216111]
+	GetHandleVerifier [0x0x7ff7b7c372d4+113092]
+	GetHandleVerifier [0x0x7ff7b7c37489+113529]
+	GetHandleVerifier [0x0x7ff7b7c1e288+10616]
+	BaseThreadInitThunk [0x0x7ffb80f3e8d7+23]
+	RtlUserThreadStart [0x0x7ffb8283c34c+44]
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-07-27T20:26:14.495635" elapsed="0.000028"/>
+</kw>
+<status status="FAIL" start="2025-07-27T20:26:14.354101" elapsed="0.141668">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=138.0.7204.169)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7b7c2e925+77845]
+	GetHandleVerifier [0x0x7ff7b7c2e980+77936]
+	(No symbol) [0x0x7ff7b79e9b0c]
+	(No symbol) [0x0x7ff7b7a41ba4]
+	(No symbol) [0x0x7ff7b7a336c8]
+	(No symbol) [0x0x7ff7b7a688ca]
+	(No symbol) [0x0x7ff7b7a32f76]
+	(No symbol) [0x0x7ff7b7a68ae0]
+	(No symbol) [0x0x7ff7b7a90b07]
+	(No symbol) [0x0x7ff7b7a686a3]
+	(No symbol) [0x0x7ff7b7a31791]
+	(No symbol) [0x0x7ff7b7a32523]
+	GetHandleVerifier [0x0x7ff7b7f0683d+3059501]
+	GetHandleVerifier [0x0x7ff7b7f00bfd+3035885]
+	GetHandleVerifier [0x0x7ff7b7f203f0+3164896]
+	GetHandleVerifier [0x0x7ff7b7c48c2e+185118]
+	GetHandleVerifier [0x0x7ff7b7c5053f+216111]
+	GetHandleVerifier [0x0x7ff7b7c372d4+113092]
+	GetHandleVerifier [0x0x7ff7b7c37489+113529]
+	GetHandleVerifier [0x0x7ff7b7c1e288+10616]
+	BaseThreadInitThunk [0x0x7ffb80f3e8d7+23]
+	RtlUserThreadStart [0x0x7ffb8283c34c+44]
+</status>
+</kw>
+<kw name="Clicar em Wi-Fi Settings" owner="inc">
+<status status="NOT RUN" start="2025-07-27T20:26:14.496089" elapsed="0.000030"/>
+</kw>
+<kw name="Convert To Integer" owner="BuiltIn">
+<var>${total}</var>
+<arg>${SSID_COUNT}</arg>
+<doc>Converts the given item to an integer number.</doc>
+<status status="NOT RUN" start="2025-07-27T20:26:14.496262" elapsed="0.000023"/>
+</kw>
+<for flavor="IN RANGE">
+<iter>
+<kw name="Get Variable Value" owner="BuiltIn">
+<var>${ssid}</var>
+<arg>${SSID${i}}</arg>
+<doc>Returns variable value or ``default`` if the variable does not exist.</doc>
+<status status="NOT RUN" start="2025-07-27T20:26:14.496600" elapsed="0.000021"/>
+</kw>
+<kw name="Get Variable Value" owner="BuiltIn">
+<var>${senha}</var>
+<arg>${SENHA${i}}</arg>
+<doc>Returns variable value or ``default`` if the variable does not exist.</doc>
+<status status="NOT RUN" start="2025-07-27T20:26:14.496694" elapsed="0.000018"/>
+</kw>
+<kw name="Get Variable Value" owner="BuiltIn">
+<var>${freq24}</var>
+<arg>${FREQ24_${i}}</arg>
+<doc>Returns variable value or ``default`` if the variable does not exist.</doc>
+<status status="NOT RUN" start="2025-07-27T20:26:14.496777" elapsed="0.000017"/>
+</kw>
+<kw name="Get Variable Value" owner="BuiltIn">
+<var>${freq5}</var>
+<arg>${FREQ5_${i}}</arg>
+<doc>Returns variable value or ``default`` if the variable does not exist.</doc>
+<status status="NOT RUN" start="2025-07-27T20:26:14.496857" elapsed="0.000017"/>
+</kw>
+<kw name="Get Variable Value" owner="BuiltIn">
+<var>${vlan}</var>
+<arg>${VLAN${i}}</arg>
+<doc>Returns variable value or ``default`` if the variable does not exist.</doc>
+<status status="NOT RUN" start="2025-07-27T20:26:14.496940" elapsed="0.000018"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>Criando SSID: ${ssid} - Senha: ${senha} - Freq24: ${freq24} - Freq5: ${freq5} - VLAN: ${vlan}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-07-27T20:26:14.497020" elapsed="0.000017"/>
+</kw>
+<kw name="Criar novo SSID" owner="inc">
+<arg>${ssid}</arg>
+<status status="NOT RUN" start="2025-07-27T20:26:14.497120" elapsed="0.000023"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${freq24}' == 'True'</arg>
+<arg>Selecionar 2.4GHz</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2025-07-27T20:26:14.497210" elapsed="0.000018"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${freq5}' == 'True'</arg>
+<arg>Selecionar 5GHz</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="NOT RUN" start="2025-07-27T20:26:14.497292" elapsed="0.000018"/>
+</kw>
+<kw name="Colocar Senha SSID" owner="inc">
+<arg>${senha}</arg>
+<status status="NOT RUN" start="2025-07-27T20:26:14.497393" elapsed="0.000019"/>
+</kw>
+<kw name="Colocar VLAN" owner="inc">
+<arg>${vlan}</arg>
+<status status="NOT RUN" start="2025-07-27T20:26:14.497507" elapsed="0.000019"/>
+</kw>
+<var name="${i}"/>
+<status status="NOT RUN" start="2025-07-27T20:26:14.496516" elapsed="0.001036"/>
+</iter>
+<var>${i}</var>
+<value>1</value>
+<value>${total + 1}</value>
+<status status="NOT RUN" start="2025-07-27T20:26:14.496408" elapsed="0.001178"/>
+</for>
+<kw name="Fechar o navegador" owner="inc" type="TEARDOWN">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-07-27T20:26:14.603050" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-07-27T20:26:14.498024" elapsed="0.105161"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-07-27T20:26:14.603363" elapsed="2.157044"/>
+</kw>
+<status status="PASS" start="2025-07-27T20:26:14.497841" elapsed="2.262679"/>
+</kw>
+<doc>Este teste cria múltiplos SSIDs conforme definido em variaveis.robot</doc>
+<status status="FAIL" start="2025-07-27T20:25:33.627658" elapsed="43.133220">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=138.0.7204.169)
+Stacktrace:
+	GetHandleVerifier [0x0x7ff7b7c2e925+77845]
+	GetHandleVerifier [0x0x7ff7b7c2e980+77936]
+	(No symbol) [0x0x7ff7b79e9b0c]
+	(No symbol) [0x0x7ff7b7a41ba4]
+	(No symbol) [0x0x7ff7b7a336c8]
+	(No symbol) [0x0x7ff7b7a688ca]
+	(No symbol) [0x0x7ff7b7a32f76]
+	(No symbol) [0x0x7ff7b7a68ae0]
+	(No symbol) [0x0x7ff7b7a90b07]
+	(No symbol) [0x0x7ff7b7a686a3]
+	(No symbol) [0x0x7ff7b7a31791]
+	(No symbol) [0x0x7ff7b7a32523]
+	GetHandleVerifier [0x0x7ff7b7f0683d+3059501]
+	GetHandleVerifier [0x0x7ff7b7f00bfd+3035885]
+	GetHandleVerifier [0x0x7ff7b7f203f0+3164896]
+	GetHandleVerifier [0x0x7ff7b7c48c2e+185118]
+	GetHandleVerifier [0x0x7ff7b7c5053f+216111]
+	GetHandleVerifier [0x0x7ff7b7c372d4+113092]
+	GetHandleVerifier [0x0x7ff7b7c37489+113529]
+	GetHandleVerifier [0x0x7ff7b7c1e288+10616]
+	BaseThreadInitThunk [0x0x7ffb80f3e8d7+23]
+	RtlUserThreadStart [0x0x7ffb8283c34c+44]
+</status>
+</test>
+<doc>Essa suite utiliza o site INC Cloud</doc>
+<status status="FAIL" start="2025-07-27T20:25:33.061540" elapsed="43.700024"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Inc Main" id="s1" pass="0" fail="1" skip="0">Inc Main</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-07-27T20:25:33.626804" level="ERROR">Error in file 'C:\Automation\RobotFramework\WebTesting\inc_main.robot' on line 4: Processing variable file 'variaveis.robot' failed: Importing variable file 'variaveis.robot' failed: ModuleNotFoundError: No module named 'variaveis'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\gabri\AppData\Local\Programs\Python\Python313\Scripts\robot.exe
+  C:\Users\gabri\AppData\Local\Programs\Python\Python313\python313.zip
+  C:\Users\gabri\AppData\Local\Programs\Python\Python313\DLLs
+  C:\Users\gabri\AppData\Local\Programs\Python\Python313\Lib
+  C:\Users\gabri\AppData\Local\Programs\Python\Python313
+  C:\Users\gabri\AppData\Local\Programs\Python\Python313\Lib\site-packages</msg>
+</errors>
+</robot>
