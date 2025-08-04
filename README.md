@@ -42,10 +42,10 @@ No Windows:
 No macOS/Linux:
 - source venv/bin/activate
 
-- Com o ambiente virtual ativado, instale as bibliotecas necessárias:
+Com o ambiente virtual ativado, instale as bibliotecas necessárias:
 pip install robotframework robotframework-seleniumlibrary PySide6
 
-- A execução da automação agora começa pela interface gráfica. Abra seu terminal ou prompt de comando na raiz do projeto e execute o script interface.py:
+A execução da automação agora começa pela interface gráfica. Abra seu terminal ou prompt de comando na raiz do projeto e execute o script interface.py:
 python interface.py
 
 Configurar e Executar via GUI:
